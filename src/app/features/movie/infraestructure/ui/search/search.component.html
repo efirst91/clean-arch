@@ -1,0 +1,25 @@
+<section>
+  <h1>Search</h1>
+  <div>
+    <mat-form-field appearance="outline">
+      <label>Query</label>
+      <input matInput type="text">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <label>Year</label>
+      <input class="hide-arrow-indicator" matInput type="number" >
+    </mat-form-field>
+
+    <button mat-raised-button (click)="onSearch()">Search</button>
+  </div>
+
+  <div>
+    <mat-form-field appearance="outline">
+      <label>Token</label>
+      <input matInput type="text" [formControl]="tokenControl">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="onSetToken()">Search</button>
+  </div>
+</section>
