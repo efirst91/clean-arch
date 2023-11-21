@@ -8,7 +8,7 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
       // example if is 404 r 200, if you don't catch the error here then it is passed to the
       // component, the error will be propagated using return  throwError(err);but if you don´t want
       // to propagate the error then return EMPTY
-      console.log('Error del interceptor ', err);
+      console.log('Interceptor error', err);
       return throwError(err);
     })
   );
